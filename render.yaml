@@ -1,0 +1,11 @@
+
+services:
+  - type: web
+    name: skill-tracker-api
+    env: python
+    buildCommand: ""
+    startCommand: "python app.py"
+    envVars:
+      - key: FLASK_ENV
+        value: production
+    autoDeploy: true
